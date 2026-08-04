@@ -1,4 +1,6 @@
+import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -94,7 +96,46 @@ public class Main {
         System.out.println(averageMarks);
         System.out.println(highsetmarks);
         System.out.println(lowestmarks);
-        
+
+        String x="1";
+        int y=Integer.parseInt(x)+2;
+        System.out.println(y);
+
+        int result=(int)(Math.random()*100);
+        System.out.println(result);
+
+
+        String finalResult=NumberFormat.getCurrencyInstance().format(123456.8891);
+
+        System.out.println(finalResult);
+
+        /*Scanner scanner= new Scanner(System.in);
+        System.out.print("Enter your fullname: ");
+        String fullName1=scanner.nextLine().trim();
+        System.out.println("you are :"+fullName1);*/
+        // Mortage Calculator//
+
+        final byte months_in_Year=12;
+        final byte percent=100;
+
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("Principal:");
+        int principal= scanner.nextInt();
+
+        System.out.println("Annual Interest rate:");
+        float annualinterest= scanner.nextFloat();
+        float monthlyinterest=annualinterest/months_in_Year/percent;
+        System.out.println("perioid(years)");
+
+        byte years=scanner.nextByte();
+        int numberOfPayments=years*months_in_Year;
+
+        double mortage=principal*(monthlyinterest*Math.pow(1+monthlyinterest,numberOfPayments)/(Math.pow(1+monthlyinterest,numberOfPayments)-1));
+        String mortageFormatted=NumberFormat.getCurrencyInstance().format(mortage);
+        System.out.println("Mortage:"+mortageFormatted);
+
+
+
 
     }
 

@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String name = "Anil";
         int age = 30;
-        float height = 5.95f;
+        //float height = 5.95f;
         char gender = 'M';
         boolean isStudent = true;
         String favChar = "Spiderman";
@@ -22,12 +22,12 @@ public class Main {
         int subtract=number1-number2;
         int multiply=number1*number2;
         int division=number1/number2;
-        int remainder=number1%number2;
+        //int remainder=number1%number2;
         System.out.println("Addition:"+add);
         System.out.println("multiply:"+multiply);
         System.out.println("subtract:"+subtract);
         System.out.println("division:"+division);
-        System.out.println("remainder:"+remainder);
+        //System.out.println("remainder:"+remainder);
 
 
         double celsius=25;
@@ -41,8 +41,8 @@ public class Main {
         System.out.println(fullName.toLowerCase());
 
 
-        String firstName="Anil";
-        String lastName="Pandey";
+        String firstName="Alin";
+        String lastName="Panday";
         int age1=30;
         System.out.println("My full name is "+ firstName +" "+ lastName +"and I am"+age1+" years old");
 

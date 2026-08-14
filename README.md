@@ -1,6 +1,7 @@
 abstract keywords in java
 abstract keywords in java is used used when method of a class is not in used or don't know what to do with the current method.
 while implementing abstract class the class which is inherited from the main class should made abstract and the method name should also made abstract
+and as well as we cannot create a object of a abstract class and we have to create with the sub class which is child class.
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 
